@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="240dp"
+    android:layout_height="wrap_content"
+    tools:context="net.collated.android.ShareDialogActivity"
+    android:padding="12dp">
+
+    <EditText
+        android:id="@+id/share_title_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <!--<TextView-->
+        <!--android:id="@+id/share_url_text"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/share_title_edit"-->
+        <!--android:textColor="@color/colorPrimary"-->
+        <!--/>-->
+
+
+    <ImageView
+        android:id="@+id/share_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/share_title_edit"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/share_image">
+
+        <Button
+            android:id="@+id/share_cancel_button"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:onClick="onButtonClicked"/>
+
+        <Button
+            android:id="@+id/share_save_button"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:textColor="#fff"
+            android:backgroundTint="@color/colorPrimary"
+            android:onClick="onButtonClicked"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
